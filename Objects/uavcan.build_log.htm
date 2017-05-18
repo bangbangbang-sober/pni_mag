@@ -1,0 +1,164 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.16a
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sin sin, sin, LIC=EPPDY-I64ES-AVG1J-U4SV4-6YJS7-QFVRD
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.16a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16a
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      UL2CM3.DLL V1.155.12.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+F:\work\code\sensor\传感器  最终版\磁力计\ma_mag\uavcan.uvprojx
+Project File Date:  02/17/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'uvacan'
+compiling system_stm32f4xx.c...
+compiling tim.c...
+compiling spi.c...
+compiling can.c...
+source\code\can.c(122): warning:  #177-D: variable "crc" was declared but never referenced
+      uint16_t crc = 0xFFFFU;
+source\code\can.c(123): warning:  #550-D: variable "frame_index" was set but never used
+  		uint8_t frame_index, last_frame;
+source\code\can.c(123): warning:  #550-D: variable "last_frame" was set but never used
+  		uint8_t frame_index, last_frame;
+source\code\can.c(190): warning:  #177-D: variable "temp" was declared but never referenced
+  	  uint32_t temp;
+source\code\can.c(218): warning:  #177-D: variable "temp" was declared but never referenced
+    uint8_t temp;
+source\code\can.c: 5 warnings, 0 errors
+compiling gpio.c...
+compiling main.c...
+source\code\main.c(142): warning:  #177-D: variable "Magndata_x" was declared but never referenced
+  	uint16_t Magndata_x,Magndata_y,Magndata_z;
+source\code\main.c(142): warning:  #177-D: variable "Magndata_y" was declared but never referenced
+  	uint16_t Magndata_x,Magndata_y,Magndata_z;
+source\code\main.c(142): warning:  #177-D: variable "Magndata_z" was declared but never referenced
+  	uint16_t Magndata_x,Magndata_y,Magndata_z;
+source\code\main.c(143): warning:  #177-D: variable "Accldata_x" was declared but never referenced
+    uint16_t Accldata_x,Accldata_y,Accldata_z;
+source\code\main.c(143): warning:  #177-D: variable "Accldata_y" was declared but never referenced
+    uint16_t Accldata_x,Accldata_y,Accldata_z;
+source\code\main.c(143): warning:  #177-D: variable "Accldata_z" was declared but never referenced
+    uint16_t Accldata_x,Accldata_y,Accldata_z;
+source\code\main.c(144): warning:  #177-D: variable "Gyrodata_x" was declared but never referenced
+  	uint16_t Gyrodata_x,Gyrodata_y,Gyrodata_z;
+source\code\main.c(144): warning:  #177-D: variable "Gyrodata_y" was declared but never referenced
+  	uint16_t Gyrodata_x,Gyrodata_y,Gyrodata_z;
+source\code\main.c(144): warning:  #177-D: variable "Gyrodata_z" was declared but never referenced
+  	uint16_t Gyrodata_x,Gyrodata_y,Gyrodata_z;
+source\code\main.c(145): warning:  #177-D: variable "Quardata_X" was declared but never referenced
+  	float Quardata_X,Quardata_Y,Quardata_Z,Quardata_W;
+source\code\main.c(145): warning:  #177-D: variable "Quardata_Y" was declared but never referenced
+  	float Quardata_X,Quardata_Y,Quardata_Z,Quardata_W;
+source\code\main.c(145): warning:  #177-D: variable "Quardata_Z" was declared but never referenced
+  	float Quardata_X,Quardata_Y,Quardata_Z,Quardata_W;
+source\code\main.c(145): warning:  #177-D: variable "Quardata_W" was declared but never referenced
+  	float Quardata_X,Quardata_Y,Quardata_Z,Quardata_W;
+source\code\main.c: 13 warnings, 0 errors
+compiling uavcan.c...
+source\UAVCAN\uavcan.c(32): warning:  #177-D: variable "PRIORITY_HIGHEST" was declared but never referenced
+  static const uint8_t PRIORITY_HIGHEST = 0;
+source\UAVCAN\uavcan.c(33): warning:  #177-D: variable "PRIORITY_HIGH" was declared but never referenced
+  static const uint8_t PRIORITY_HIGH    = 8;
+source\UAVCAN\uavcan.c(34): warning:  #177-D: variable "PRIORITY_MEDIUM" was declared but never referenced
+  static const uint8_t PRIORITY_MEDIUM  = 16;
+source\UAVCAN\uavcan.c(35): warning:  #177-D: variable "PRIORITY_LOW" was declared but never referenced
+  static const uint8_t PRIORITY_LOW     = 24;
+source\UAVCAN\uavcan.c(36): warning:  #177-D: variable "PRIORITY_LOWEST" was declared but never referenced
+  static const uint8_t PRIORITY_LOWEST  = 31;
+source\UAVCAN\uavcan.c: 5 warnings, 0 errors
+assembling startup_stm32f40xx.s...
+compiling misc.c...
+compiling ADIS16488A.C...
+source\ADIS16488A\adis.h(63): warning:  #231-D: declaration is not visible outside of function
+  	int (*enable_irq)(struct adis *adis, bool enable);
+source\ADIS16488A\adis.h(198): warning:  #177-D: variable "tmp" was declared but never referenced
+  	unsigned int tmp;
+source\ADIS16488A\adis.h(199): warning:  #177-D: variable "ret" was declared but never referenced
+  	int ret;
+source\ADIS16488A\adis.h(200): warning:  #177-D: variable "pRxData" was declared but never referenced
+    uint8_t pTxData[2], pRxData[2];
+source\ADIS16488A\adis.h(201): warning:  #550-D: variable "ppRxdata" was set but never used
+  	uint16_t  ppRxdata,ppRxdata1;
+source\ADIS16488A\adis.h(230): warning:  #177-D: variable "tmp" was declared but never referenced
+  	unsigned int tmp;
+source\ADIS16488A\adis.h(231): warning:  #177-D: variable "ret" was declared but never referenced
+  	int ret;
+source\ADIS16488A\adis.h(232): warning:  #177-D: variable "addr" was declared but never referenced
+    uint8_t addr;
+source\ADIS16488A\adis.h(235): warning:  #177-D: variable "pRxData" was declared but never referenced
+    uint8_t pTxData[4], pRxData[4];
+source\ADIS16488A\ADIS16488A.C(145): warning:  #177-D: variable "buf" was declared but never referenced
+  	char buf[7];
+source\ADIS16488A\ADIS16488A.C(159): warning:  #177-D: variable "buf" was declared but never referenced
+  	char buf[7];
+source\ADIS16488A\ADIS16488A.C(175): warning:  #177-D: variable "buf" was declared but never referenced
+  	char buf[12];
+source\ADIS16488A\ADIS16488A.C(176): warning:  #177-D: variable "len" was declared but never referenced
+  	size_t len;
+source\ADIS16488A\ADIS16488A.C(324): warning:  #177-D: variable "val32" was declared but never referenced
+  	uint32_t val32;
+source\ADIS16488A\ADIS16488A.C(325): warning:  #550-D: variable "ret" was set but never used
+  	int ret;
+source\ADIS16488A\ADIS16488A.C(566): warning:  #177-D: variable "ret" was declared but never referenced
+  	int ret;
+source\ADIS16488A\ADIS16488A.C: 16 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_can.c...
+compiling i2c.c...
+source\code\i2c.c(167): warning:  #177-D: variable "temp" was declared but never referenced
+    uint8_t temp;
+source\code\i2c.c(251): warning:  #550-D: variable "res_accl" was set but never used
+  	 uint8_t res_accl,res_gyro;
+source\code\i2c.c(251): warning:  #550-D: variable "res_gyro" was set but never used
+  	 uint8_t res_accl,res_gyro;
+source\code\i2c.c: 3 warnings, 0 errors
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_flash_ramfunc.c...
+compiling stm32f4xx_dbgmcu.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_dma2d.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_iwdg.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_wwdg.c...
+compiling stm32f4xx_tim.c...
+linking...
+Program Size: Code=5804 RO-data=424 RW-data=4 ZI-data=1636  
+FromELF: creating hex file...
+".\Objects\uavcan.axf" - 0 Error(s), 42 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  F:\work\code\sensor\传感器  最终版\磁力计\ma_mag\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
